@@ -1,0 +1,333 @@
+/*
+* Copyright (C) 2016 Angel Sierra Vega. Grupo INDIE.
+* @license file://LICENSE
+*/
+/* 
+    Created on : 31/12/2016, 09:13:43 PM
+    Author     : Angel Sierra Vega <angel.sierra@grupoindie.com>
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+html body {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+html footer {
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /*background-color: #142841;*/
+    /*border-bottom: 3px #f59e2b solid;  Naranja */
+    /*color:white;*/
+    /*padding-top: 60px;*/
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    /*padding-bottom: 15px;*/
+    /*line-height: 20px;*/
+}
+
+
+/*Elementos*/
+.navbar {
+    /*margin-bottom: 12px;*/
+    height: 60px;
+}
+.navbar-fixed-top{
+    margin-bottom: 25px;
+}
+
+.navbar-brand {
+    font-size: 15px;
+}
+
+.logoAI{
+    /*background-color: #122b40;*/
+    margin-top: 15px;
+    /*border-radius: 180px;*/
+}
+@media only screen and (min-width: 650px) {
+    .logoAI{
+        /*padding: 1em;*/
+    }
+}
+
+#treeview .node-treeview .btn{
+    padding: 2px 5px 2px 5px;
+    margin: 0px 5px;
+    font-size: 8px;
+    float: inherit;
+}
+
+#sortable .list-group-item{
+    height: 4em;
+}
+
+
+.modal-body {
+    max-height: calc(100vh - 250px);
+    min-height: 300px !important;
+    overflow-y: auto;
+}
+.modal {
+    /*position: relative;*/
+}
+
+.modal {
+    position: absolute !important;
+    background-color: transparent !important;
+
+    /*display: none;*/
+    /*overflow: hidden;*/
+    /*padding-left: 0px;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    bottom: auto;
+    /*left: 0;*/
+    /*z-index: 1050;*/
+    /*-webkit-overflow-scrolling: touch;*/
+/*    outline: 0;*/
+}
+
+.modal-open {
+    /*overflow: scroll;*/
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+.btn {
+    text-shadow: 0 0px 0 #fff0;
+}
+
+/* Cambio de tamaño para los botones de datatables */
+
+.paginate_button {
+    font-size: .7em;
+    max-height: inherit;
+    min-height: inherit;
+}
+
+.paginate_button a{
+    max-height: inherit;
+    min-height: inherit;
+}
+
+.pagination{
+    max-height: 35px;
+    min-height: 35px;
+}
+
+.slogan{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.panel{
+    overflow-x: hidden;
+}
+
+.panel:hover{
+
+}
+
+/*.panel-body{
+    max-height: 320px;
+    overflow-y: auto;
+}*/
+
+.navbar-collapse{
+    /*background: #142841;*/
+}
+
+
+
+
+.panel-body .jstree{
+    max-width: inherit;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.gip-buttons-jstree{
+    padding-left: 20px;
+}
+
+/*.jstree-node{
+    max-width: 90%;
+}*/
+
+.jstree-anchor {
+    /*enable wrapping*/
+    white-space : normal !important;
+    /*ensure lower nodes move down*/
+    height : auto !important;
+    /*offset icon width*/
+    /*padding-right : 40px;*/
+    max-width: 100%;
+}
+
+.gip-btn-jstree, gip-btn-jstree{
+    float: left;
+}
+
+.modal-body{
+    overflow: auto;
+}
+
+form .dropdown-menu > li > a{
+    white-space: normal;
+    height : auto !important;
+}
+
+/*Cargado desde table*/
+.empty-caret{
+    padding-bottom: 0.65em;
+    padding-top: 0.65em;
+}
+.padding-bottom-2{
+    padding-bottom: em;
+}
+.margin-bottom-min{
+    margin-bottom: 0.5em;
+}
+
+.custom {
+    font-size: 8px;
+    font-family: Arial;
+}
+.bottomcustom, .topcustom {
+    font-size: 8px;
+    font-family: Arial;
+    width: 540px;
+}
+
+/*table { font-size: 0.75em; }*/
+
+/*th, td { white-space: nowrap; }*/
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 15px;
+    text-align: left;
+    /*background-color: #ffffff;*/
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.dropdown-menu > li > a {
+    font-weight: normal;
+    /*line-height: 1.42857143;*/
+    /*color: #7b8a8b;*/
+    /*white-space: nowrap;*/
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.nav-pills > li > a {
+    /*border-radius: 0px;*/
+}
+
+.navbar-brand {
+    float: left;
+    padding: 12px 15px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 60px;
+}
+.navbar-brand > a:hover {
+    cursor: pointer;
+}
+.navbar-brand > a > img {
+    padding-top: 5px;
+}
+
+.navbar-brand.dropdown{
+    padding: 21.5px 15px;
+}
+
+.navbar-nav {
+    margin-right: 15px;
+}
+.navbar-nav > li > a {
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+}
+
+a.list-group-item,
+button.list-group-item {
+    color: #555555;
+}
+a.list-group-item .list-group-item-heading,
+button.list-group-item .list-group-item-heading {
+    color: #333333;
+}
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+    text-decoration: none;
+    color: #555555;
+    background-color: #e8e7ed;
+}
+button.list-group-item {
+    width: 100%;
+    text-align: left;
+}
+
+.panel-title {
+    /*  margin-top: 0;
+      margin-bottom: 0;
+      font-size: 17px;
+      color: inherit;*/
+    padding: 7.5px 0px 7.5px 0px;
+}
+
+
+
+
+/*.modal.in .modal-dialog {
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+}
+
+.modal.fade .modal-dialog {
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+}
+
+.modal-content {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+}*/
